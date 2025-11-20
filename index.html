@@ -1,78 +1,93 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Linda Sphelele — Portfolio</title>
-  <link rel="stylesheet" href="styles.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Full Stack Developer</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header class="site-header">
-    <div class="container">
-      <h1 class="logo">Linda Sphelele</h1>
-      <button id="nav-toggle" class="nav-toggle" aria-expanded="false">Menu</button>
-      <nav id="main-nav" class="main-nav">
-        <a href="#projects">Projects</a>
-        <a href="#about">About</a>
-        <a href="#contact">Contact</a>
-      </nav>
-    </div>
-  </header>
+    <!-- Navigation Header -->
+    <header class="navbar">
+        <div class="navbar-container">
+            <div class="navbar-logo">
+                <div class="logo-avatar">YN</div>
+                <span>Your Name</span>
+            </div>
+            <nav class="navbar-menu">
+                <a href="#home" class="nav-link active">Home</a>
+                <a href="#projects" class="nav-link">Project</a>
+                <a href="#services" class="nav-link">Services</a>
+                <a href="#resume" class="nav-link">Resume</a>
+                <a href="#testimonials" class="nav-link">Testimonial</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#articles" class="nav-link">Article</a>
+            </nav>
+            <button class="contact-btn">CONTACT</button>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
 
-  <main>
-    <section class="hero">
-      <div class="container">
-        <h2>Hi, I'm Linda — web developer & designer</h2>
-        <p>Building accessible, responsive interfaces with attention to usability and performance.</p>
-        <a class="cta" href="#projects">See my work</a>
-      </div>
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    <span class="wave-emoji">👋</span> Hey, I'm Your Name<br>
+                    Full-Stack Developer.
+                </h1>
+                <p class="hero-description">
+                    Full Stack Frontend Developer and Content Writing Based on LA. I specialize in Bug Fixing, Responsive Web Design, and Visual Development.
+                </p>
+                <div class="hero-buttons">
+                    <button class="btn-primary">HIRE ME <span class="arrow">→</span></button>
+                    <button class="btn-secondary">
+                        <span class="play-icon">▶</span> Play Intro
+                    </button>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="/placeholder.svg?height=400&width=350" alt="Developer portrait">
+            </div>
+        </div>
     </section>
 
-    <section id="projects" class="container projects">
-      <h3>Projects</h3>
-      <div class="grid">
-        <article class="card">
-          <h4>Project Title</h4>
-          <p>Short project description. Tech: HTML, CSS, JS</p>
-          <a href="#">View project</a>
-        </article>
-        <!-- Add more project cards -->
-      </div>
+    <!-- Clients Section -->
+    <section class="clients-section">
+        <div class="clients-container">
+            <div class="clients-content">
+                <h2 class="clients-title">I work with over 279+ happy clients all over the world.</h2>
+                <p class="clients-description">
+                    Suspendisse eget ultricies felis, in lacinia lectus. Morbi accumsan dapibus tortor, in fermentum odio malesuada in aliquam sed ipsum tristique.
+                </p>
+            </div>
+            <div class="clients-grid">
+                <div class="client-logo">
+                    <span>Amazon</span>
+                </div>
+                <div class="client-logo">
+                    <span>Google</span>
+                </div>
+                <div class="client-logo">
+                    <span>Spotify</span>
+                </div>
+                <div class="client-logo">
+                    <span>Dribbble</span>
+                </div>
+                <div class="client-logo">
+                    <span>Microsoft</span>
+                </div>
+                <div class="client-logo">
+                    <span>LinkedIn</span>
+                </div>
+            </div>
+        </div>
     </section>
 
-    <section id="about" class="container about">
-      <h3>About</h3>
-      <p>Short bio and a link to download resume.</p>
-      <a href="#" class="button">Download Resume</a>
-    </section>
-
-    <section id="contact" class="container contact">
-      <h3>Contact</h3>
-      <form id="contact-form">
-        <label>
-          <span>Name</span>
-          <input type="text" name="name" required />
-        </label>
-        <label>
-          <span>Email</span>
-          <input type="email" name="email" required />
-        </label>
-        <label>
-          <span>Message</span>
-          <textarea name="message" rows="5" required></textarea>
-        </label>
-        <button type="submit">Send</button>
-      </form>
-    </section>
-  </main>
-
-  <footer class="site-footer">
-    <div class="container">
-      <p>&copy; Linda Sphelele</p>
-      <p><a href="https://github.com/lindasphelele">GitHub</a></p>
-    </div>
-  </footer>
-
-  <script src="main.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
