@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Linda Sphelele — Portfolio</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <h1 class="logo">Linda Sphelele</h1>
+      <button id="nav-toggle" class="nav-toggle" aria-expanded="false">Menu</button>
+      <nav id="main-nav" class="main-nav">
+        <a href="#projects">Projects</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container">
+        <h2>Hi, I'm Linda — web developer & designer</h2>
+        <p>Building accessible, responsive interfaces with attention to usability and performance.</p>
+        <a class="cta" href="#projects">See my work</a>
+      </div>
+    </section>
+
+    <section id="projects" class="container projects">
+      <h3>Projects</h3>
+      <div class="grid">
+        <article class="card">
+          <h4>Project Title</h4>
+          <p>Short project description. Tech: HTML, CSS, JS</p>
+          <a href="#">View project</a>
+        </article>
+        <!-- Add more project cards -->
+      </div>
+    </section>
+
+    <section id="about" class="container about">
+      <h3>About</h3>
+      <p>Short bio and a link to download resume.</p>
+      <a href="#" class="button">Download Resume</a>
+    </section>
+
+    <section id="contact" class="container contact">
+      <h3>Contact</h3>
+      <form id="contact-form">
+        <label>
+          <span>Name</span>
+          <input type="text" name="name" required />
+        </label>
+        <label>
+          <span>Email</span>
+          <input type="email" name="email" required />
+        </label>
+        <label>
+          <span>Message</span>
+          <textarea name="message" rows="5" required></textarea>
+        </label>
+        <button type="submit">Send</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; Linda Sphelele</p>
+      <p><a href="https://github.com/lindasphelele">GitHub</a></p>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
